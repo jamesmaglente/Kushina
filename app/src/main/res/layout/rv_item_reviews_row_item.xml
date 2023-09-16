@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:tint="@color/colorPrimary"
+                android:id="@+id/iv_item_reviews_image"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/colorPrimary"
+                android:src="@drawable/applogo"
+                android:layout_width="50dp"
+                android:layout_height="40dp">
+
+            </de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/tv_item_reviews_name"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                >
+            </TextView>
+
+            <ImageView
+                android:src="@drawable/ic_delete_forever_24dp"
+                android:id="@+id/iv_item_reviews_remove"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_gravity="end"
+                >
+
+            </ImageView>
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:progressTint="@color/yellow3"
+                android:id="@+id/rb_item_reviews_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:gravity="top"
+                >
+
+            </androidx.appcompat.widget.AppCompatRatingBar>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/tv_item_review"
+            android:textStyle="bold"
+            android:textColor="@color/colorTitle"
+            android:text="Review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_item_reviews_click"
+                android:layout_weight="1"
+
+                android:gravity="start"
+                android:textStyle="bold|italic"
+                android:text="Click to edit this review"
+                android:textSize="11sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_weight="1"
+                android:gravity="end"
+                android:id="@+id/tv_item_reviews_date"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:text="None"
+                android:textSize="11sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

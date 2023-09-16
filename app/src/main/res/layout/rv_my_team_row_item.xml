@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:background="@android:color/transparent"
+
+    >
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:gravity="end"
+            android:id="@+id/tv_my_team_status"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:text="None"
+            android:textSize="13sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <ImageView
+                android:visibility="gone"
+                android:src="@drawable/splash"
+                android:id="@+id/iv_payment_options_icon"
+                android:layout_weight="5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+
+
+            </ImageView>
+
+            <LinearLayout
+                android:paddingLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1.5"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_my_team_name"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:text="Name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_my_team_number"
+                        android:textColor="@color/colorBlack"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:text="Number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical"
+                    android:layout_weight="1.5"
+                    android:paddingBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/tv_my_team_total_purchased"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorTitle"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:text="None"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+
+                    <TextView
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorPrimary"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:text="Total Purchased"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </TextView>
+
+                </LinearLayout>
+
+
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTitle"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

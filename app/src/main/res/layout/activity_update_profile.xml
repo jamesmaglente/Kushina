@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".navigations.account.UpdateProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:text="Update Profile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:tint="@color/colorWhite"
+                        android:src="@drawable/ic_edit_black_48dp"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="-8dp"
+                android:src="@drawable/ic_wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="-10dp"
+                android:layout_marginHorizontal="10dp"
+                app:cardCornerRadius="5dp"
+                app:cardElevation="5dp"
+                app:cardUseCompatPadding="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:id="@+id/btn_update_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/round_bg"
+                        android:paddingHorizontal="15dp"
+                        android:text="Update Number"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="14sp"
+                        android:textStyle="bold">
+
+                    </Button>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/til_update_profile_mobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clipChildren="false"
+                        android:layout_marginHorizontal="40dp"
+                        app:hintTextColor="@color/colorTitle">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:layout_marginBottom="10dp"
+                            android:id="@+id/edt_update_profile_mobile"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColorHint="@color/colorTitle"
+                            android:translationY="3dp"
+                            android:drawableTint="@color/colorPrimary"
+                            android:background="@drawable/round_border"
+                            android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+                            android:drawablePadding="10dp"
+                            android:hint="Mobile Number"
+                            android:inputType="number"
+                            android:padding="12dp"
+                            android:singleLine="true"
+                            android:textColor="@color/colorTitle"
+                            app:hintTextColor="@color/colorTitle">
+
+                        </com.google.android.material.textfield.TextInputEditText>
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:id="@+id/til_update_profile_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:layout_marginHorizontal="40dp"
+                app:hintTextColor="@color/colorTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_update_profile_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTitle"
+                    android:translationY="3dp"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_email_login"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTitle"
+                    app:hintTextColor="@color/colorTitle">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="-8dp"
+                android:id="@+id/til_update_profile_firstname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:layout_marginHorizontal="40dp"
+                app:hintTextColor="@color/colorTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_update_profile_firstname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTitle"
+                    android:translationY="3dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_person_login"
+                    android:drawablePadding="10dp"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTitle"
+                    app:hintTextColor="@color/colorTitle">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="-8dp"
+                android:id="@+id/til_update_profile_middlename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:layout_marginHorizontal="40dp"
+                app:hintTextColor="@color/colorTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_update_profile_middlename"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTitle"
+                    android:translationY="3dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_person_login"
+                    android:drawablePadding="10dp"
+                    android:hint="Middle Name"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTitle"
+                    app:hintTextColor="@color/colorTitle">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="-8dp"
+                android:id="@+id/til_update_profile_lastname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:layout_marginHorizontal="40dp"
+                app:hintTextColor="@color/colorTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_update_profile_lastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTitle"
+                    android:translationY="3dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_person_login"
+                    android:drawablePadding="10dp"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:padding="12dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTitle"
+                    app:hintTextColor="@color/colorTitle">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+
+            <Button
+                android:id="@+id/btn_update_profile"
+                android:textSize="16sp"
+                android:text="Update Profile"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/round_bg"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+            </Button>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+            </Space>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

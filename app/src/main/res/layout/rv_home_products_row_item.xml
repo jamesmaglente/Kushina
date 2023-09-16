@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    >
+
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="140dp"
+        android:layout_height="140dp">
+
+
+        <ImageView
+            android:id="@+id/iv_home_product_picture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/applogo"
+
+            />
+
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:background="@drawable/dialog_bg"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_home_item_name"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:textColor="@color/colorWhite"
+                android:text="Item Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_home_item_price"
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:textColor="@color/colorWhite"
+                android:text="Item Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+<!--        <LinearLayout-->
+<!--            android:layout_marginHorizontal="10dp"-->
+<!--            android:padding="5dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_below="@id/iv_home_product_picture"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_home_item_name"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="13sp"-->
+<!--                android:textColor="@color/colorTitle"-->
+<!--                android:text="Item Name"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </TextView>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/tv_home_item_price"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:text="Item Price"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </TextView>-->
+
+<!--        </LinearLayout>-->
+
+
+
+
+<!--        <View-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="1.3dp"-->
+<!--            android:layout_marginHorizontal="4dp"-->
+<!--            android:background="#b1b1b1"/>-->
+
+
+
+<!--        <LinearLayout-->
+<!--            android:padding="10dp"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/tv_merchant_name"-->
+<!--                android:text="Merchant Desc"-->
+<!--                android:textSize="12sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/colorPrimary"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </TextView>-->
+<!--            <TextView-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/tv_merchant_time"-->
+<!--                android:text="Merchant Time"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </TextView>-->
+<!--            <TextView-->
+<!--                android:gravity="center"-->
+<!--                android:id="@+id/tv_merchant_distance"-->
+<!--                android:text="Merchant KM"-->
+<!--                android:textSize="11sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content">-->
+
+<!--            </TextView>-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

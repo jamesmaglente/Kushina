@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".navigations.dashboard.DashboardFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/ic_wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+  <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:layout_marginTop="15dp"
+          android:layout_marginHorizontal="10dp"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+          <TextView
+              android:layout_marginTop="10dp"
+              android:text="LEADERBOARD"
+              android:textStyle="bold"
+              android:textColor="@color/colorWhite"
+              android:textSize="16sp"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+          </TextView>
+
+          <LinearLayout
+              android:visibility="gone"
+              android:layout_marginTop="50dp"
+              android:orientation="vertical"
+              android:id="@+id/ll_no_rankings_yet"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <ImageView
+                  android:src="@drawable/ic_history_black_24dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="80dp">
+
+              </ImageView>
+
+              <TextView
+                  android:textSize="15sp"
+                  android:layout_marginTop="10dp"
+                  android:textColor="@color/colorTitle"
+                  android:textStyle="bold"
+                  android:gravity="center"
+                  android:text="No rankings yet."
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+
+              </TextView>
+
+
+
+          </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_leaderboard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </RelativeLayout>
+
+
+
+
+          <Space
+              android:layout_width="match_parent"
+              android:layout_height="100dp">
+
+          </Space>
+
+      </LinearLayout>
+
+
+  </ScrollView>
+
+</RelativeLayout>

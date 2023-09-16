@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:state_pressed="true"
+        android:drawable="@drawable/btn_default_pressed_bg_choice"
+        >
+    </item> <!-- pressed -->
+
+    <item
+        android:state_focused="true"
+        android:drawable="@drawable/btn_default_focus_bg_choice"
+        >
+    </item><!-- focused -->
+
+    <item
+        android:drawable="@drawable/btn_default_bg_choice"
+        >
+    </item><!-- default -->
+
+</selector>

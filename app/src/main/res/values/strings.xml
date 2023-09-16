@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Kushina</string>
+    <string name="title_home">Food Menu</string>
+    <string name="title_orders">My Orders</string>
+    <string name="title_food">Foods</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_account">Me</string>
+    <string name="title_achievements_and_rewards">Milestone</string>
+    <string name="title_ranking">Ranking</string>
+    <string name="title_ecash">Wallet</string>
+
+    <string name="action_notifications">Notifications</string>
+    <string name="action_my_cart">My Basket</string>
+
+    <!--    Admob IDs    -->
+    <string name="admob_app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="native_advanced_ads_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="rewarded_ads_id">ca-app-pub-3940256099942544/5224354917</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Error Messages-->
+    <string name="err_msg_email">Email is required</string>
+    <string name="err_msg_new_password">New Password is required</string>
+    <string name="err_msg_old_password">Old Password is required</string>
+    <string name="err_msg_password">Password is required</string>
+    <string name="err_msg_confirm_password">Confirm Password is required</string>
+    <string name="err_msg_first_name">First Name is required</string>
+    <string name="err_msg_last_name">Last Name is required</string>
+    <string name="err_msg_mobile">Mobile Number is required</string>
+    <string name="err_msg_otp_key">Code is required</string>
+    <string name="err_msg_valid_email">Enter a valid email</string>
+    <string name="err_msg_password_not_match">Passwords do not match</string>
+
+    <!-- Address Error Messages-->
+    <string name="err_msg_address_title">Title is required</string>
+    <string name="err_msg_address_dropoff_name">Dropoff customer name is required</string>
+    <string name="err_msg_address_dropoff_number">Dropoff contact number is required</string>
+    <string name="err_msg_address_house_address">House Address is required</string>
+    <string name="err_msg_address_zip_code">Zip code is required</string>
+    <string name="err_msg_address_landmarks">Landmarks is required</string>
+
+    <!--    E-Cash Error Messages-->
+    <string name="err_msg_account_name">Account Name is required</string>
+    <string name="err_msg_account_number">Account Number is required</string>
+    <string name="err_msg_amount">Amount is required</string>
+    <string name="err_msg_card_number">Card Number is required</string>
+    <string name="err_msg_card_exp_month">Expiration Month is required</string>
+    <string name="err_msg_card_exp_year">Expiration Year is required</string>
+    <string name="err_msg_cvc">CVC is required</string>
+
+
+</resources>

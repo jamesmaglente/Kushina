@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl_main_layout"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kushina.customer.android.navigations.account.AccountFragment">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/ic_wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/ll_top_card"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_ecash_total_ecash"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="₱ 0.00"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="15sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:text="Current E-Cash"
+                        android:textSize="12sp"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <LinearLayout
+
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_ecash_cashback"
+                            android:gravity="center"
+                            android:text="₱ 0.00"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Cashback Earned"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_marginRight="-10dp"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/grey1" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_ecash_referral_bonus"
+                            android:gravity="center"
+                            android:text="₱ 0.00"
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:gravity="center"
+                            android:text="Referral Bonus Earned"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/btn_deposit_ecash"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_top_up_deposit"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:textSize="13sp"
+                            android:text="Top-up"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_weight="1"
+                    app:cardElevation="5dp"
+                    app:cardCornerRadius="5dp"
+                    app:cardUseCompatPadding="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+
+                        android:id="@+id/btn_withdraw_ecash"
+                        android:padding="10dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_cash_out_withdraw"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp">
+
+                        </ImageView>
+
+                        <TextView
+
+                            android:layout_marginTop="5dp"
+                            android:layout_gravity="center"
+                            android:textSize="13sp"
+                            android:text="Cash Out"
+                            android:textColor="@color/colorBlack"
+                            android:textStyle="bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_transaction_history"
+        android:layout_below="@id/ll_top_card"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <ImageView
+            android:src="@drawable/ic_history"
+            android:id="@+id/iv_navigation_icon"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="13dp">
+
+
+        </ImageView>
+
+        <LinearLayout
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/tv_navigation_title"
+                android:layout_weight="1"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:text="Transaction History"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|center">
+
+            </TextView>
+
+
+            <ImageView
+                android:layout_weight="4"
+                android:src="@drawable/ic_arrow_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="15dp"
+                >
+            </ImageView>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+<!--    <ScrollView-->
+<!--        android:layout_below="@id/ll_top_card"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+
+<!--    </ScrollView>-->
+
+
+
+</RelativeLayout>

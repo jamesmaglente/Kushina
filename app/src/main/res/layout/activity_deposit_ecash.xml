@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".navigations.ecash.DepositECashActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_view_switcher"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/btn_viewpager_deposit_express"
+                android:background="@color/colorPrimary"
+                android:paddingVertical="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tv_deposit_ecash_lbl_deposit_express"
+                    android:gravity="center"
+                    android:text="TOP-UP E-CASH\n(EXPRESS)"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/colorOrange" />
+
+
+            <LinearLayout
+                android:id="@+id/btn_viewpager_deposit_regular"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_deposit_ecash_lbl_deposit_regular"
+                    android:gravity="center"
+                    android:text="DEPOSIT E-CASH\n(REGULAR)"
+                    android:textSize="12sp"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="fill_parent"
+                android:background="@color/colorOrange" />
+
+            <LinearLayout
+                android:id="@+id/btn_viewpager_deposit_history"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_deposit_ecash_lbl_deposit_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="DEPOSIT HISTORY"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="12sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@id/ll_view_switcher"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTitle"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:layout_below="@id/ll_view_switcher"
+        android:id="@+id/ll_deposit_ecash_express"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_login_password"
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_deposit_ecash"
+                android:hint="Amount"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:translationY="3dp"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:id="@+id/edt_login_password"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_deposit"
+            android:textSize="16sp"
+            android:text="Deposit"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_below="@id/ll_view_switcher"
+        android:id="@+id/ll_deposit_history"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_marginTop="120dp"
+            android:orientation="vertical"
+            android:id="@+id/ll_no_history_yet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/ic_history_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="80dp">
+
+            </ImageView>
+
+            <TextView
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/colorTitle"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="You don't have any deposits yet."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_deposit_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </Space>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:visibility="gone"
+        android:id="@+id/ll_deposit_ecash_regular"
+        android:layout_below="@id/ll_view_switcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/btn_choose_deposit_method"
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorTitle"
+                android:text="Deposit Method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Choose what method do you want to deposit."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_deposit_ecash_deposit_method"
+                android:layout_marginTop="10dp"
+                android:gravity="end"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:textColor="@android:color/black"
+                android:text="None"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/ll_deposit_method_details"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1.1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:layout_gravity="end"
+                        android:id="@+id/btn_copy_number"
+                        android:textSize="12sp"
+                        android:text="Copy"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorWhite"
+                        android:background="@drawable/round_bg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp">
+
+                    </Button>
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lbl_deposit_method_number"
+                            android:paddingRight="5dp"
+                            android:text="Number:"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_deposit_method_number"
+                            android:text="None"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_gravity="end"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/lbl_deposit_method_name"
+                            android:paddingRight="5dp"
+                            android:text="Name:"
+                            android:textStyle="bold"
+                            android:textSize="12sp"
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:id="@+id/tv_deposit_method_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:text="None"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="12sp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTitle"/>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:textColor="@color/colorTitle"
+            android:text="Amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="11sp"
+            android:textColor="@color/colorPrimary"
+            android:text="Enter how much would you like to deposit."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        </TextView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_deposit_ecash_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            android:layout_marginLeft="80dp"
+            app:hintTextColor="@color/colorTitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_marginBottom="10dp"
+                android:id="@+id/edt_deposit_ecash_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTitle"
+                android:translationY="3dp"
+                android:drawableTint="@color/colorPrimary"
+                android:background="@drawable/round_border"
+                android:drawableLeft="@drawable/ic_credit_card_black_24dp"
+                android:drawablePadding="10dp"
+                android:hint="Amount"
+                android:inputType="number"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:textColor="@color/colorTitle"
+                app:hintTextColor="@color/colorTitle">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTitle"/>
+
+
+
+
+        <LinearLayout
+            android:padding="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="@color/colorTitle"
+                android:text="Proof of Payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="11sp"
+                android:textColor="@color/colorPrimary"
+                android:text="Upload the picture of your proof of payment."
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/iv_proof_of_payment"
+                android:src="@drawable/ic_add_a_photo_black_24dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="250dp">
+
+            </ImageView>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTitle"/>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:paddingRight="5dp"
+                android:text="Note:"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+
+                android:text="Regular deposit may take up to 24-48 hours to be processed."
+                android:textSize="12sp"
+                android:textColor="@color/colorBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_deposit_ecash"
+            android:textSize="16sp"
+            android:text="Submit"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:layout_marginHorizontal="30dp"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+
+
+        </Button>
+
+        <Button
+            android:visibility="gone"
+            android:id="@+id/btn_product"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deposit E-Cash"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </Space>
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    tools:context=".navigations.home.EditReviewActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="-8dp"
+            android:src="@drawable/ic_wave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.AppCompatRatingBar
+                android:id="@+id/rb_item_reviews_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:progressTint="@color/colorPrimary"
+                android:isIndicator="false"
+                android:gravity="top"
+                >
+
+            </androidx.appcompat.widget.AppCompatRatingBar>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_item_reviews_review"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipChildren="false"
+            app:hintTextColor="@color/colorTitle">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_marginBottom="10dp"
+                android:id="@+id/edt_item_reviews_review"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/colorTitle"
+                android:translationY="3dp"
+                android:background="@drawable/rectangle_border"
+                android:drawablePadding="10dp"
+                android:hint="Review"
+                android:inputType="textMultiLine"
+                android:minHeight="100dp"
+                android:gravity="start"
+                android:padding="12dp"
+                android:textColor="@color/colorTitle"
+                app:hintTextColor="@color/colorTitle">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_add_review"
+            android:layout_marginVertical="10dp"
+            android:background="@drawable/round_bg"
+            android:text="Save Review"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:layout_marginHorizontal="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+        </Button>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,477 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigations.ecash.TransactionHistoryActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:visibility="visible"
+        android:id="@+id/ll_tx_details_dialog"
+        android:background="@color/color_black"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="20dp"
+            android:layout_centerInParent="true"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true"
+            android:background="@android:color/transparent"
+
+            >
+
+            <LinearLayout
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_transaction_history_type"
+                        android:gravity="center"
+                        android:textColor="@color/colorTitle"
+                        android:textSize="13sp"
+                        android:text="2nd Level Personal Rebates"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <TextView
+                        android:gravity="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="11sp"
+                        android:text="Transaction Type"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+
+
+                </LinearLayout>
+
+                <androidx.cardview.widget.CardView
+                    app:cardUseCompatPadding="true"
+                    app:cardCornerRadius="5dp"
+                    app:cardElevation="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+
+
+                    <LinearLayout
+                        android:padding="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_transaction_history_credited"
+                                android:gravity="center"
+                                android:text="₱ 0.00"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:text="Amount Credited"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorSuccess"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_marginRight="-10dp"
+                            android:layout_width="1dp"
+                            android:layout_height="fill_parent"
+                            android:background="@color/grey1" />
+
+                        <LinearLayout
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/tv_transaction_history_debited"
+                                android:gravity="center"
+                                android:text="₱ 0.00"
+                                android:textSize="15sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorBlack"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+                            <TextView
+                                android:gravity="center"
+                                android:text="Amount Debited"
+                                android:textSize="11sp"
+                                android:textStyle="bold"
+                                android:textColor="@color/colorError"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                            </TextView>
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_transaction_history_from"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"
+                            android:text="Name"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="11sp"
+                            android:text="Source"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_marginRight="-10dp"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/grey1" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_transaction_history_tax"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"
+                            android:text="None"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="11sp"
+                            android:text="Tax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_transaction_history_order_id"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"
+                            android:text="0"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="11sp"
+                            android:text="Order ID"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_marginRight="-10dp"
+                        android:layout_width="1dp"
+                        android:layout_height="fill_parent"
+                        android:background="@color/grey1" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/tv_transaction_history_date"
+                            android:gravity="center"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="13sp"
+                            android:text="Date"
+                            android:textStyle="bold"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="11sp"
+                            android:text="Date"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </TextView>
+
+
+
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_gravity="center"
+                    android:id="@+id/btn_transaction_history_okay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/ButtonStyle"
+                    android:background="@drawable/btn_background_green"
+                    android:text="Okay"
+                    android:layout_marginTop="15dp"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:visibility="gone"
+                android:id="@+id/btn_claim_rewards"
+                android:elevation="10dp"
+                android:gravity="center"
+                android:background="@drawable/dialog_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="CLAIM"
+                    android:background="@drawable/round_bg"
+                    android:layout_marginHorizontal="100dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/ll_top_card"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="1dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:background="@color/colorTitle" />-->
+
+        <!--            <androidx.cardview.widget.CardView-->
+        <!--                app:cardUseCompatPadding="true"-->
+        <!--                app:cardElevation="5dp"-->
+        <!--                app:cardCornerRadius="5dp"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content">-->
+
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+<!--            <TextView-->
+<!--                android:paddingLeft="10dp"-->
+<!--                android:textColor="@color/colorWhite"-->
+<!--                android:textSize="15sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Recent Transactions"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/colorTitle">-->
+
+
+<!--            </TextView>-->
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_marginTop="100dp"
+                android:orientation="vertical"
+                android:id="@+id/ll_no_history_yet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:src="@drawable/ic_history_black_24dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                </ImageView>
+
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/colorTitle"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:text="You don't have any orders yet."
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+
+
+            </LinearLayout>
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content">-->
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginTop="5dp"
+                android:background="@color/transparent"
+                android:id="@+id/rv_ecash_transaction_history"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <!--            </RelativeLayout>-->
+
+        </LinearLayout>
+
+        <!--            </androidx.cardview.widget.CardView>-->
+
+        <!--            <Space-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="100dp">-->
+
+        <!--            </Space>-->
+
+
+    </LinearLayout>
+</LinearLayout>

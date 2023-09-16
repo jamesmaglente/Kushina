@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:appcompat="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/action_my_cart"
+        android:icon="@drawable/my_cart_actionbar_group_icon"
+        android:title="@string/action_my_cart"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_notifications"
+        android:icon="@drawable/notification_actionbar_group_icon"
+        android:title="@string/action_notifications"
+        app:showAsAction="ifRoom" />
+
+<!--    <item-->
+<!--        android:id="@+id/action_help_and_feedback"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/action_help_and_feedback"-->
+<!--        app:showAsAction="never" />-->
+
+<!--    <item-->
+<!--        android:id="@+id/action_create"-->
+<!--        android:orderInCategory="100"-->
+<!--        android:title="@string/action_creator"-->
+<!--        app:showAsAction="never" />-->
+
+</menu>

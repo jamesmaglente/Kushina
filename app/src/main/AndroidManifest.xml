@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.kushina.customer.android">
+
+    <dist:module dist:instant="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+
+    <application
+        android:name=".globals.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".navigations.orders.OrdersActivity"
+            android:label="Orders"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.orders.OrdersActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan"
+            />
+        <activity
+            android:name=".navigations.ecash.TransactionHistoryActivity"
+            android:label="Transaction History"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.TransactionHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.GcashOrGrabPayActivity"
+            android:label="Gcash or Grab"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.GcashOrGrabPayActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.CreditDebitCardActivity"
+            android:label="Credit or Debit Card"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.CreditDebitCardActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.OverTheCounterActivity"
+            android:label="Over the Counter"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.OverTheCounterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.DepositECashBaseActivity"
+            android:label="Top-up E-Cash"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.DepositECashBaseActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.PaymongoActivity"
+            android:label="Complete Payment"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.PaymongoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.my_team.MyTeamActivity"
+            android:label="My Referral Group"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.my_team.MyTeamActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.home.SearchItemsActivity"
+            android:label="Search Item"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.home.SearchItemsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.ECashMainActivity"
+            android:label="E-Cash"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.ECashMainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.MilestoneActivity"
+            android:label="Milestone"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.MilestoneActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.RankingActivity"
+            android:label="Ranking"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.RankingActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.AccountActivity"
+            android:label="Account"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.AccountActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.VerifyNewNumberActivity"
+            android:label="Verify Number"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.VerifyNewNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.UpdateNumberActivity"
+            android:label="Update Mobile Number"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.UpdateNumberActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start_up_screens.ResetPasswordActivity"
+            android:label="Reset Password"
+            android:launchMode="singleTop"
+            android:parentActivityName=".start_up_screens.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start_up_screens.ForgotPasswordActivity"
+            android:label="Forgot Password"
+            android:launchMode="singleTop"
+            android:parentActivityName=".start_up_screens.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.withdraw.ChooseWithdrawMethodActivity"
+            android:label="Choose Withdraw Method"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.withdraw.ChooseWithdrawMethodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.withdraw.WithdrawECashActivity"
+            android:label="Cash out E-Cash"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.withdraw.WithdrawECashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start_up_screens.SubmitSMSOTPActivity"
+            android:label="Submit Code"
+            android:launchMode="singleTop"
+            android:parentActivityName=".start_up_screens.SubmitSMSOTPActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.home.MyFavoritesActivity"
+            android:label="My Favorites"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.home.MyFavoritesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.home.EditReviewActivity"
+            android:label="Edit Review"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.home.EditReviewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.cart.MyCartActivity"
+            android:label="My Basket"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.cart.MyCartActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.notifications.NotificationsActivity"
+            android:label="Notifications"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.notifications.NotificationsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.DepositDetailsActivity"
+            android:label="Deposit Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.DepositDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.ChooseDepositMethodActivity"
+            android:label="Choose Deposit Method"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.ChooseDepositMethodActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.DepositECashActivity"
+            android:label="Deposit E-Cash"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.DepositECashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.orderhistory.OrderDetailsActivity"
+            android:label="Order Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.orderhistory.OrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.orderhistory.OrderHistoryActivity"
+            android:label="Order History"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.orderhistory.OrderHistoryActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.home.ItemDetailsActivity"
+            android:label="Item Details"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.home.ItemDetailsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name=".navigations.cart.ChoosePaymentOptionsActivity"
+            android:label="Choose Payment Options"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.cart.ChoosePaymentOptionsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.addresses.AddEditAddressActivity"
+            android:label="Add or Edit Address"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.addresses.AddEditAddressActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.addresses.AddressListActivity"
+            android:label="Address List"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.addresses.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.UpdatePasswordActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.UpdatePasswordActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.account.UpdateProfileActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.account.UpdateProfileActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.ecash.ECashActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.ecash.ECashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start_up_screens.LoginActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".start_up_screens.RegistrationActivity"
+            android:label=""
+            android:launchMode="singleTop"
+            android:parentActivityName=".start_up_screens.LoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="kushina.xyz"
+                    android:pathPrefix="/referror/"
+                    android:scheme="http" />
+                <data
+                    android:host="kushina.xyz"
+                    android:pathPrefix="/referror/"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity> <!-- Sample AdMob App ID: ca-app-pub-3940256099942544~3347511713 -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713" />
+
+        <activity
+            android:name=".navigations.earn_ecash.EarnECashActivity"
+            android:label="Earn E-Cash"
+            android:launchMode="singleTop"
+            android:parentActivityName=".navigations.earn_ecash.EarnECashActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".navigations.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".start_up_screens.SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <service
+            android:name=".globals.MainService"
+            android:exported="true"
+            android:label="Main Service" />
+    </application>
+
+</manifest>

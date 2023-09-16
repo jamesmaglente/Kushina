@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigations.ecash.GcashOrGrabPayActivity">
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/ll_deposit_ecash_express"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            app:cardUseCompatPadding="true"
+            app:cardBackgroundColor="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_deposit_details"
+                android:padding="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1.3"
+                        android:text="E-Cash to Deposit:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_ecash_to_deposit"
+                        android:layout_weight="1"
+                        android:text="₱ 0.00"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1.3"
+                        android:text="Convenience Fee:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_convenience_fee"
+                        android:layout_weight="1"
+                        android:text="₱ 0.00"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1.3"
+                        android:text="Total Amount:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/tv_total_amount"
+                        android:layout_weight="1"
+                        android:text="₱ 0.00"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@android:color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_deposit_ecash_amount"
+            android:layout_width="match_parent"
+            android:clipChildren="false"
+            app:hintTextColor="@color/colorBlack"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:drawablePadding="20dp"
+                android:drawableLeft="@drawable/ic_credit_card_amount"
+                android:hint="Amount"
+                android:layout_marginBottom="10dp"
+                android:padding="12dp"
+                android:translationY="3dp"
+                android:textColor="@color/colorBlack"
+                android:singleLine="true"
+                android:id="@+id/edt_deposit_ecash_amount"
+                android:inputType="number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_deposit"
+            android:textSize="16sp"
+            android:text="Deposit"
+            android:textStyle="bold"
+            android:textColor="@color/colorWhite"
+            android:background="@drawable/round_bg"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

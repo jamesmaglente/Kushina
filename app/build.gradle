@@ -1,0 +1,126 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'com.jakewharton.butterknife'
+
+android {
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.kushina.customer.android"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 16
+        versionName "1.3.21.9.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+
+    // Butterknife
+    implementation 'com.jakewharton:butterknife:10.2.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.0'
+
+    // Material Design
+    implementation 'com.google.android.material:material:1.3.0-alpha01'
+
+    // volley
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.5'
+
+    // spots
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+
+    // circle image view
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
+    //SpotsDialog
+    implementation 'com.github.d-max:spots-dialog:0.7@aar'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Carousel
+    implementation 'com.synnapps:carouselview:0.1.5'
+
+    //Lottie
+    implementation 'com.airbnb.android:lottie:3.4.1'
+
+    //AdMob
+    implementation 'com.google.android.gms:play-services-ads:19.3.0'
+
+    // Searchable Spinner
+    implementation 'com.toptoche.searchablespinner:searchablespinnerlibrary:1.3.1'
+
+    // Google Maps
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-gcm:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.google.android.gms:play-services-places:17.0.0'
+    implementation 'com.google.android.libraries.places:places:2.2.0'
+
+    // In app billing
+    implementation 'com.android.billingclient:billing:3.0.0'
+
+
+    // ACRA
+    def acraVersion = '5.1.3'
+    // implementation 'ch.acra:acra:4.6.2'
+
+    // SENDER
+
+    // Http
+    implementation "ch.acra:acra-http:$acraVersion"
+    // Email
+    // implementation "ch.acra:acra-mail:$acraVersion"
+    // Custom
+    // implementation "ch.acra:acra-core:$acraVersion"
+
+    // INTERACTION
+    // Dialog
+    // implementation "ch.acra:acra-dialog:$acraVersion"
+    // MyApplication
+    // implementation "ch.acra:acra-notification:$acraVersion"
+    // Toast
+    // implementation "ch.acra:acra-toast:$acraVersion"
+    // Silent
+    // ....
+
+    // OPTIONAL PLUGINS
+    // Limiter: (limits how many reports acra sends from one device)
+    // implementation "ch.acra:acra-limiter:$acraVersion"
+    // Advanced Scheduler: [since 5.2.0-rc1] (controls when reports are sent (e.g. only on wifi) and can restart an application after a crash)
+    // implementation "ch.acra:acra-advanced-scheduler:$acraVersion"
+}

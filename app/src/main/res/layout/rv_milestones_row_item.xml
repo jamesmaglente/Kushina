@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="5dp"
+    android:background="@android:color/transparent"
+
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tv_milestone_name"
+                android:layout_marginLeft="10dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTitle"
+                android:text="Milestone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:visibility="invisible"
+                android:layout_weight="4"
+                android:id="@+id/tv_milestone_reached"
+                android:layout_marginLeft="10dp"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:text="Reached"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            </LinearLayout>
+
+            <SeekBar
+                android:thumbTintMode="src_over"
+                android:thumbTint="@color/colorPrimary"
+                android:progressTint="@color/colorPrimary"
+                android:progressBackgroundTint="@color/colorPrimary"
+                android:id="@+id/sb_milestone_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </SeekBar>
+
+        </LinearLayout>
+
+
+        <ImageView
+            android:padding="10dp"
+            android:src="@drawable/applogo"
+            android:layout_weight="5"
+            android:id="@+id/iv_milestone_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

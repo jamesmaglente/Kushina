@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".navigations.account.VerifyNewNumberActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:background="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:padding="10dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="20dp"
+                        android:gravity="start"
+                        android:layout_weight="1"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="22sp"
+                        android:textStyle="bold"
+                        android:text="Verification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                    </TextView>
+
+                    <ImageView
+                        android:layout_marginLeft="20dp"
+                        android:tint="@color/colorWhite"
+                        android:src="@drawable/common_full_open_on_phone"
+                        android:layout_weight="1.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp">
+
+
+                    </ImageView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginHorizontal="-10dp"
+                android:layout_marginTop="-8dp"
+                android:src="@drawable/ic_wave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ImageView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginTop="20dp"
+                android:id="@+id/til_new_number_otp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipChildren="false"
+                android:layout_marginHorizontal="40dp"
+                app:hintTextColor="@color/colorTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/edt_submit_otp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTitle"
+                    android:translationY="3dp"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:background="@drawable/round_border"
+                    android:drawableLeft="@drawable/ic_smartphone_black_24dp"
+                    android:drawableTint="@color/colorPrimary"
+                    android:drawablePadding="10dp"
+                    android:hint="Code"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:singleLine="true"
+                    android:textColor="@color/colorTitle"
+                    app:hintTextColor="@color/colorTitle">
+
+                </com.google.android.material.textfield.TextInputEditText>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_new_number_submit"
+                android:textSize="16sp"
+                android:text="Submit Code"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"
+                android:layout_marginHorizontal="30dp"
+                android:background="@drawable/round_bg"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"/>
+
+            <TextView
+                android:id="@+id/btn_request_new_otp"
+                android:textStyle="bold"
+                android:textColor="@color/colorTitle"
+                android:text="SEND NEW CODE"
+                android:gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/ic_search"
+        android:layout_weight="7"
+        android:layout_gravity="center"
+        android:paddingVertical="15dp"
+        />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_weight="1"
+        android:id="@+id/edt_search"
+        android:layout_marginTop="5dp"
+        android:hint="Search Food"
+        android:clickable="true"
+        android:enabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawablePadding="20dp"
+        android:maxLines="1"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:textColorHint="@color/red1"
+        android:backgroundTint="@color/red1"
+        >
+
+    </com.google.android.material.textfield.TextInputEditText>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Search"
+        android:layout_weight="5"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/colorWhite"
+        android:paddingLeft="5dp"
+        />
+
+</LinearLayout>
