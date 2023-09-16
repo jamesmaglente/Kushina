@@ -1,3 +1,3 @@
-# Asian Palate Application
+# Kushina Customer App
 
-Kushina Customer App
+
